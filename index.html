@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Layout</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Header Section with Contact Info -->
+    <header>
+        <div class="top-header">
+            <div class="contact-info">
+                <span>[email protected]</span>
+                <span>| 001 23 456 78 910</span>
+                <span>| 22nd St East Village</span>
+            </div>
+            <div class="language">
+                <span>EN</span>
+            </div>
+        </div>
+
+        <!-- Main Header Section with Logo and Search Bar -->
+        <div class="main-header">
+            <div class="logo">
+                <img src="images/medicine-logo-png-20.png" alt="Vitasana Health Care Logo">
+                <span class="logo-text">Vitasana Health Care</span> 
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+            <div class="user-options">
+                <span>[email protected]</span>
+                <span class="icon">👤</span>
+                <span class="icon">❤️</span>
+                <span class="icon">🛒<span class="cart-count">0</span></span>
+            </div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <ul class="nav-list" id="nav-list">
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Medical Supplies</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+            <button class="contact-btn">Contact us</button>
+            <div class="menu-toggle" id="mobile-menu" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+
+        <div id="dropdown-menu">
+            <button class="close-btn" onclick="toggleMenu()">X</button>
+            <ul>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Medical Supplies</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+    </header>
+<!-- Header Ends -->
+
+<!-- Main Starts -->
+    <main>
+         <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/lip bam (1).jpg" alt="Hand Cream Slide 1">
+            <div class="text">Hand Cream - Natural Cosmetics Mild</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/pexels-pixabay-208518.jpg" alt="Hand Cream Slide 2">
+            <div class="text">Urea infusion mild - 0.3%</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/slider3.jpg" alt="Hand Cream Slide 3">
+            <div class="text">Nourishing Hand Cream</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="images/gentle.jpg" alt="Gentle Brushes">
+                <div class="overlay">
+                    <h3>Gentle Brushes</h3>
+                    <a href="#" class="button">View More</a>
+                </div>
+            </div>
+    
+            <div class="product-card">
+                <img src="images/bodylotion.jpg" alt="Body Lotion">
+                <div class="overlay">
+                    <h3>Body Lotion</h3>
+                    <a href="#" class="button">View More</a>
+                </div>
+            </div>
+    
+            <div class="product-card">
+                <img src="images/lip bam (1).jpg" alt="Lip Balm">
+                <div class="overlay">
+                    <h3>Lip Balm</h3>
+                    <a href="#" class="button">View More</a>
+                </div>
+            </div>
+    
+            <div class="product-card">
+                <img src="images/gym.jpg" alt="Gym Gummies">
+                <div class="overlay">
+                    <h3>Gym Gummies</h3>
+                    <a href="#" class="button">View More</a>
+                </div>
+            </div>
+    
+            <div class="product-card">
+                <img src="images/serum.jpg" alt="Face Serum">
+                <div class="overlay">
+                    <h3>Face Serum</h3>
+                    <a href="#" class="button">View More</a>
+                </div>
+            </div>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7567.181730861038!2d73.85862513991307!3d18.50218255466751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c014271918c5%3A0xfa3ce63f0c494d3f!2sSwargate%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1727084226254!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+
+    </main>
+    <!-- Main Endss -->
+     
+
+    <!-- footer starts -->
+    <footer>
+                <div class="container">
+                    <div class="footer-column">
+                        <h3>About us</h3>
+                        <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed do eiusm od temponc ididunt.</p>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Information</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Pricing Plans</a></li>
+                    </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Browse</h3>
+                        <ul>
+                            <li><a href="#">Apothecary</a></li>
+                            <li><a href="#">Beauty</a></li>
+                            <li><a href="#">Skincare</a></li>
+                    </ul>
+                </div>
+                    <div class="footer-column">
+                    <h3>Working Hours</h3>
+                        <p>Mon - Fri: 09:00 - 22:00</p>
+                        <p>Sat: 09:00 - 17:00</p>
+                        <p>Sun: Closed</p>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Follow us</h3>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        
+        </body>
+        </html>
+</body>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 5000); // Change image every 2 seconds
+    }
+
+    function plusSlides(n) {
+        slideIndex += n;
+        showSlides();
+    }
+
+    function currentSlide(n) {
+        slideIndex = n;
+        showSlides();
+    }
+</script>
+<script>
+    function toggleMenu() {
+        const dropdownMenu = document.getElementById('dropdown-menu');
+        dropdownMenu.classList.toggle('active');
+    }
+    </script>
+</html>
